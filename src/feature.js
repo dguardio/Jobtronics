@@ -12,7 +12,7 @@ app.factory("UserStats"["$firebaseObject",
 ]);
 
 app.controller("UserCtrl", ["$scope", "UserStats"
-	function($scope, UserStats){
-		UserStats("")$.bindTo($scope, "userstats");
+	function($scope, UserStats) {
+		UserStats("Prof")$.bindTo($scope, "userstats");
 	}
 ]);
